@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campanha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_resp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <div class="neles">
+                <p>44 Neles</p>
+            </div>
+            <div class="lista-nav">
+                <ul>
+                    <li><a href="#">Propostas</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#">Termo de Uso</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+                id="butao-hamburguer">
+                <img src="imagens/hamburguer.png" alt="Menu">
+            </button>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                    alt="Logo">
+
+            </div>
+        </nav>
+        <!-- Menu lateral para dispositivos móveis -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                    alt="Logo" id="menu-foto">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="#">Propostas</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#programacao">Blog</a></li>
+                    <li><a href="#">Termo de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="foto-principal-main"></div>
+
+        <div class="galeria" id="programacao">
+            <p id="galeria-texto1">Galeria de Fotos da Semana</p>
+
+            <div class="galeria-main">
+                <div class="gallery-container">
+                    <!-- Imagem inicial pequena -->
+                    <p id="galeria-texto2">Click na foto e veja nossos momentos</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                        alt="Imagem Inicial" class="thumbnail" onclick="openGallery()">
+                </div>
+
+                <!-- Modal para exibir a galeria -->
+                <div id="galleryModal" class="modal">
+                    <span class="close" onclick="closeGallery()">&times;</span>
+                    <div class="gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 4">
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <!-- Imagem inicial pequena -->
+                    <p id="galeria-texto2">Click na foto e veja nossos momentos</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                        alt="Imagem Inicial" class="thumbnail" onclick="openGallery()">
+                </div>
+
+                <!-- Modal para exibir a galeria -->
+                <div id="galleryModal" class="modal">
+                    <span class="close" onclick="closeGallery()">&times;</span>
+                    <div class="gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 4">
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <!-- Imagem inicial pequena -->
+                    <p id="galeria-texto2">Click na foto e veja nossos momentos</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                        alt="Imagem Inicial" class="thumbnail" onclick="openGallery()">
+                </div>
+
+                <!-- Modal para exibir a galeria -->
+                <div id="galleryModal" class="modal">
+                    <span class="close" onclick="closeGallery()">&times;</span>
+                    <div class="gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 4">
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <!-- Imagem inicial pequena -->
+                    <p id="galeria-texto2">Click na foto e veja nossos momentos</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                        alt="Imagem Inicial" class="thumbnail" onclick="openGallery()">
+                </div>
+
+                <!-- Modal para exibir a galeria -->
+                <div id="galleryModal" class="modal">
+                    <span class="close" onclick="closeGallery()">&times;</span>
+                    <div class="gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="Imagem 4">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="blog" id="blog">
+            <div class="blog-text-main">Conheça nosso Blog</div>
+            <div class="blog-main">
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-main">
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-main">
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="img-blog">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                            alt="">
+                    </div>
+                    
+                    <div class="sobre-blog">
+                        <div class="titulo-blog">
+                            Lorem ipsum dolor sit amet consectetur
+                        </div>
+                        <div class="descricao-blog">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et eligendi commodi tempora, eaque rerum obcaecati velit? Esse dolore quis quas! Sapiente, tempora hic dignissimos dolor vel possimus. Doloremque, recusandae nulla!
+                            Voluptate aspernatur inventore adipisci doloremque tenetur a eum porro maxime consectetur repellat quae, doloribus magnam corrupti! Autem quisquam, consequuntur perferendis recusandae numquam omnis temporibus expedita explicabo provident pariatur ullam dicta.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-main1">
+            <div class="footer1">
+                <div class="logo-footer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHek8JtPFx_30kPlcHC1L6entlSLhuPUBog&s"
+                        alt="Logo">
+                </div>
+            </div>
+            <hr>
+            <div class="footer2">
+                <p>Entre em contato</p>
+                <div class="icones">
+                    <img src="imagens/instagram.png" alt="">
+                    <img src="imagens/whatsapp.png" alt="">
+                    <img src="imagens/youtube.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="footer3">
+                
+                <div class="cttServico">
+                    (84)99999-9999<br>
+                    Estamos contando com seu apoio, vote *00000*
+                </div>
+            </div>
+        </div>
+        <div class="footer-main2">
+            ©Lorem ipsum dolor sit • 2024 • TODOS OS DIREITOS RESERVADOS
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

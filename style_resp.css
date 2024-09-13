@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+:root {
+    --cp: #10bb00;
+    --cs: #007406;
+    --ct: #ffffff;
+    --cq: #000000;
+}
+
+/* Estilos gerais para dispositivos móveis */
+@media screen and (max-width: 890px) {
+
+    #butao-hamburguer {
+        width: 50px;
+        height: 50px;
+        background-color: var(--ct);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    #butao-hamburguer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Estilos para o menu offcanvas */
+    .offcanvas {
+        background-color: var(--cq);
+        color: var(--cq);
+    }
+
+    .offcanvas .offcanvas-body ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .offcanvas .offcanvas-body ul li {
+        margin: 10px 0;
+    }
+
+    .offcanvas .offcanvas-body ul li a {
+        color: var(--cq);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .offcanvas .offcanvas-body ul li a:hover {
+        color: var(--ct);
+        background-color: var(--cp);
+        padding: 10px;
+        transition: all .3s;
+        border-radius: 15px;
+    }
+
+    .neles P{
+        font-size: 30px;
+    }
+
+    #menu-foto{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: .2px solid #333;
+    }
+
+    .contato-footer{
+      justify-content: center;
+    }
+    form{
+        width: 100%;
+    }
+
+    .contato-footer{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Adicione isso no style.css para teste */
+@media screen and (max-width: 888px) {
+    .lista-nav li {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+    .blog-main{
+        display: block;
+    }
+    
+}
+
+.offcanvas-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;
+    box-shadow: 2px 2px 2px #cacaca;
+}
